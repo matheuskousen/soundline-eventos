@@ -1,0 +1,135 @@
+import ProdutosPage from "../../../src/components/ProdutosPage"
+import Layout from "../../../src/components/layout"
+
+export default function Estrutura() {
+	const valueIsInfo =
+		"A estrutura de alumínio para festa é um produto de muita qualidade utilizado com frequência em eventos como, aniversários, casamentos, shows musicais,entre outras ocasiões. A estrutura de alumínio é composta por diversas peças que devem ser montadas por uma equipe especializada, para garantir a segurança. Essas peças são fabricadas com um controle rigoroso de qualidade, de acordo com as normas vigentes."
+	const isValue = (
+		<h2>
+			CARACTERÍSTICAS
+			E
+			USO
+			DO
+			PRODUTO
+		</h2>
+	)
+	const valueIsInfo1 = (
+		<p>
+			Um
+			dos
+			objetivos
+			dessa
+			estrutura
+			de
+			alumínio
+			é
+			servir
+			para
+			a
+			instalação
+			de
+			equipamentos
+			e
+			apresentações,
+			além
+			de
+			contarem
+			com
+			os
+			itens
+			de
+			decoração
+			e
+			comidas
+			oferecidas
+			durante
+			o
+			evento.
+			Esse
+			é
+			um
+			elemento
+			indispensável
+			em
+			diversos
+			eventos,
+			já
+			que
+			atraí
+			a
+			atenção
+			do
+			público
+			para
+			um
+			determinado
+			ponto,
+			sendo
+			estratégico
+			na
+			realização
+			e
+			no
+			sucesso
+			do
+			evento.
+			Algumas
+			das
+			vantagens
+			da
+			estrutura
+			de
+			alumínio,
+			são,
+			por
+			exemplo:
+			Resistência
+			do
+			material,
+			A
+			leveza,
+			Rápida
+			instalação,
+			Custo-benefício.
+		</p>
+	)
+
+	return (
+		<>
+			<Layout
+				titleMeta='
+					estruturas
+					de
+					alumínio.
+					|
+					Sound
+					Line'
+				Metadescription={
+					valueIsInfo
+				}
+			>
+				<ProdutosPage
+					isNameProject='estruturas de alumínio.'
+					isNameService='estruturas de alumínio.'
+					isInfo={
+						valueIsInfo
+					}
+					isInfo1={
+						valueIsInfo1
+					}
+					iSTitle={
+						isValue
+					}
+					isImage='/assets/produtos/estruturas.jpg'
+					isImage1='/assets/produtos/estruturas1.jpg'
+					isPrev={
+						"/produtos/globes"
+					}
+					isNext={
+						"/produtos/pistadeled"
+					}
+				/>
+			</Layout>
+		</>
+	)
+}
